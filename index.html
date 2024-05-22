@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JavaScript Calculator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading-wrap">
+        <h1>JSCalc</h1>
+        <h2>fx-km17</h2>
+      </div>
+      <div class="screen-wrap">
+        <input type="text" id="calc-display" readonly/>
+        <input type="text" id="result-display" readonly/>
+      </div>
+      <div class="btn-wrap">
+        <div class="row">
+          <button type="button" id="sin-button" value="sin" onclick="sine()">sin</button>
+          <button type="button" id="tan-button" value="tan" onclick="tangent()">tan</button>
+          <button type="button" id="cos-button" value="cos" onclick="cosine()">cos</button>
+          <button type="button" id="sqr-button" value="sqr" onclick="square()">x<sup>2</sup></button>
+          <button type="button" id="sqrt-button" value="" onclick="squareRoot()">&radic;</button>
+        </div>
+        <div class="row">
+          <button type="button" id="my-button" value="7">7</button>
+          <button type="button" id="my-button" value="8">8</button>
+          <button type="button" id="my-button" value="9">9</button>
+          <button type="button" id="del-button" value="DEL" onclick="deleteValue()">DEL</button>
+          <button type="button" id="clr-button" value="AC" onclick="clearDisplay()">AC</button>
+        </div>
+        <div class="row">
+          <button type="button" id="my-button" value="4">4</button>
+          <button type="button" id="my-button" value="5">5</button>
+          <button type="button" id="my-button" value="6">6</button>
+          <button type="button" id="my-button" value="*">*</button>
+          <button type="button" id="my-button" value="/">/</button>
+        </div>
+        <div class="row">
+          <button type="button" id="my-button" value="1">1</button>
+          <button type="button" id="my-button" value="2">2</button>
+          <button type="button" id="my-button" value="3">3</button>
+          <button type="button" id="my-button" value="+">+</button>
+          <button type="button" id="my-button" value="-">-</button>
+        </div>
+        <div class="row">
+          <button type="button" id="my-button" value="0">0</button>
+          <button type="button" id="my-button" value="00">00</button>
+          <button type="button" id="my-button" value=".">.</button>
+          <button type="button" id="ans-button" value="ans"onclick="ans()">Ans</button>
+          <button type="button" id="calc-button" value="=" onclick="calculateValue()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js" async defer></script>
+  </body>
+</html>
