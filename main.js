@@ -36,5 +36,11 @@ const deleteValue = () => {
   valueDisplay.value = valueDisplay.value.slice(0, -1)
 }
 const calculateValue = () => {
-  resultDisplay.value = eval(valueDisplay.value)
+  try{
+    resultDisplay.value = eval(valueDisplay.value)
+  }
+  catch(error){
+    resultDisplay.value = "MATH ERROR"
+  }
+  
 }
